@@ -1,0 +1,10 @@
+name = "JuliaHubVSCodeExtensionTutorial"
+uuid = "d6cd6b7a-fda6-4bf4-b20b-ec7ebc5d01bc"
+authors = ["jeremie.db <jeremie.db@evovest.com>"]
+version = "0.1.0"
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+Tar = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
