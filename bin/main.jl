@@ -1,6 +1,6 @@
 using JuliaHubVSCodeExtensionTutorial, JSON3, Distributed
 
-n = parse(Int64, replace(get(ENV, "n", "10_000_000_000"), '_' => ""))
+n = parse(Int64, replace(get(ENV, "n", "1_000_000_000"), '_' => ""))
 
 stats = @timed begin
     estimate_pi_distributed(n)

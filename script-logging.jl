@@ -7,7 +7,7 @@ stats_list = []
 
 for i in 1:length(n)
     stats = @timed estimate_pi_single(n[i])
-    @info "progress logging:" i n[i] stats[:value]
+    @info "progress logging:" iter = i num_trials = n[i] pi = stats[:value]
     push!(stats_list, stats)
 end
 
