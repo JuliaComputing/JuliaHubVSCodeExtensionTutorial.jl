@@ -1,4 +1,4 @@
-using SecretAnalysis, JSON3, Printf, Distributed
+using JuliaHubVSCodeExtensionTutorial, JSON3, Distributed
 
 n = parse(Int64, replace(get(ENV, "n", "10_000_000_000"), '_' => ""))
 
