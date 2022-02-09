@@ -1,3 +1,5 @@
+push!(LOAD_PATH, abspath(normpath(joinpath(@__DIR__, "../src/"))))
+
 using JuliaHubVSCodeExtensionTutorial, JSON3, Distributed
 
 n = parse(Int64, replace(get(ENV, "n", "1_000_000_000"), '_' => ""))
