@@ -18,5 +18,9 @@ scatter!(pts[1, in_out_flag], pts[2, in_out_flag], markersize = 5, color = "fore
 scatter!(pts[1, .!in_out_flag], pts[2, .!in_out_flag], markersize = 5, color = "brown3")
 # current_figure()
 
+
+isdir("assets") || mkdir("assets")
+ENV["RESULTS_FILE"] = "assets/simul-pi.png"
+
 save("assets/simul-pi.svg", f)
 save("assets/simul-pi.png", f)
